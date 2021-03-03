@@ -1,18 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');/* font-family: 'Roboto Mono', monospace; */
+
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Roboto+Mono:wght@100&display=swap'); /* font-family: 'DotGothic16', sans-serif; */
+
+
+
 .gridContainer {
     display: grid;
-    grid-template-rows: auto;
+    grid-template-rows: 120px auto;
     grid-template-columns: 1fr 5fr 2fr;
     grid-template-areas: 
-                        "header header header"
-                        "nav main sidebar"
+                        "headerleft headermiddle headerright"
+                        "nav nav nav"
+                        "sideleft main sidebar"
                         "footer footer footer";
 }
 
-header{
-    grid-area: header;
-    background-color: #B8C4BB;
+headerleft{
+    grid-area: headerleft;
+    background-color: #7c7d7c;
     display: block;
     text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+header{
+    grid-area: headermiddle;
+    background-color: #7c7d7c;
+    display: block;
+    text-align: center;
+}
+headerright{
+    grid-area: headerright;
+    background-color: #7c7d7c;
+    display: block;
+    text-align:right;
+    font-family: 'DotGothic16', sans-serif;
+}
+sideleft{
+    grid-area: sideleft;
+    background-color: #B8C4BB;
 }
 
 nav{
@@ -24,7 +50,8 @@ nav{
 
 main{
     grid-area: main;
-    background-color: #B8C4BB;
+    background-color: #969b98;
+    padding: 5%;
 }
 
 aside{
@@ -49,3 +76,43 @@ footer{
 ul {
     list-style: none;
 }
+
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  .p1 {
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  .p2 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
