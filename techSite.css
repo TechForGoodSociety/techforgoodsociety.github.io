@@ -17,11 +17,59 @@ header{
     text-align: center;
 }
 
+/* Nav bar */
 nav{
-    grid-area: nav;
-    background-color: #B8C4BB;
-    font-size:larger;
+    grid-area:nav;
+    top:100px;
+}
+nav ul {
+    list-style: none;
     text-align: center;
+    padding: 0;
+    display:none;
+    flex-direction: column;
+}
+nav ul li{
+    justify-items: center;
+    text-align: center;
+}
+nav ul li a{
+    text-decoration: none;
+}
+nav ul li a:visited{
+    text-decoration: none;
+}
+#ham_menu {
+    position: relative;
+    float: left;
+    font-size: x-large;
+    padding-right: 5%;
+}
+
+#main-nav.show{
+    display:block;
+    height:100%;
+}
+#main-nav.show li{
+    padding: 15%;
+}
+
+#main-nav.show li a{
+    text-decoration: none;
+    text-align: center;
+    color: #1A4301;
+}
+
+#main-nav.show li a:visited{
+    text-decoration: none;
+    color: #143601;
+}
+#main-nav.show li:hover{
+    background-color: #143601;
+}
+#main-nav.show li a:hover{
+    text-decoration: none;
+    color: #ffffff;
 }
 
 main{
