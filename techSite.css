@@ -18,6 +18,7 @@ body {
 header{
     grid-area: header;
     width: 100%;
+    padding:0;
 }
 
 #logo{
@@ -28,6 +29,7 @@ header{
 }
 
 /* Nav bar */
+
 nav{
     grid-area:nav;
     top:100px;
@@ -36,8 +38,8 @@ nav ul {
     list-style: none;
     text-align: center;
     padding: 0;
-    display:none;
     flex-direction: column;
+    display:none;
 }
 nav ul li{
     justify-items: center;
@@ -55,7 +57,6 @@ nav ul li a:visited{
     font-size: x-large;
     padding-right: 5%;
 }
-
 #main-nav.show{
     display:block;
     height:100%;
@@ -87,27 +88,12 @@ main{
     background-color: #B8C4BB;
 }
 
-aside{
-    grid-area: sidebar;
-    background-color: #B8C4BB;
-    text-align: center;
-    font-size: small;
-}
 
 footer{
     grid-area: footer;
     background-color: #C9D6EA;
 }
 
-.centre {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-ul {
-    list-style: none;
-}
 
 @media screen and (min-width: 480px) {
 

@@ -14,6 +14,5 @@ window.addEventListener('load', function () {
             navmenu.className = 'show';
         }
     }
-
     menuL.addEventListener("click", toggle);
 });
